@@ -55,12 +55,12 @@ class Blog extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
-			'title' => 'Title',
-			'desc' => 'Desc',
-			'date_add' => 'Date Add',
-			'status' => 'Status',
+			'id'       => 'ID',
+			'name'     => 'Имя',
+			'title'    => 'Заголовок',
+			'desc'     => 'Текст',
+			'date_add' => 'Дата',
+			'status'   => 'Статус',
 		);
 	}
 
