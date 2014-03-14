@@ -22,22 +22,25 @@
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/css/style.css" type="text/css"
           media="screen"/>
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/styler/jquery.formstyler.css" type="text/css"
+          media="screen"/>
     <!-- ENDS CSS -->
 
-		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/custom.js"></script>
-		<script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/quicksand.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/styler/jquery.formstyler.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/custom.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/quicksand.js"></script>
 
-		<!-- poshytip -->
-		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/poshytip-1.0/src/tip-twitter/tip-twitter.css" type="text/css" />
-		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/poshytip-1.0/src/tip-yellowsimple/tip-yellowsimple.css" type="text/css" />
-		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
-		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/jquery.masonry.min.js"></script>		
-		<!-- ENDS poshytip -->
-		
-		<!-- prettyPhoto -->
-		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
-		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
-		<!-- ENDS prettyPhoto -->
+	<!-- poshytip -->
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/poshytip-1.0/src/tip-twitter/tip-twitter.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/poshytip-1.0/src/tip-yellowsimple/tip-yellowsimple.css" type="text/css" />
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/jquery.masonry.min.js"></script>		
+	<!-- ENDS poshytip -->
+	
+	<!-- prettyPhoto -->
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
+	<!-- ENDS prettyPhoto -->
 
 
     <!--[if IE]>

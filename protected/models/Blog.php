@@ -21,6 +21,13 @@ class Blog extends CActiveRecord
 		return '{{blog}}';
 	}
 
+	public function BeforeValidate()
+	{
+		$this->date_add = date("Y-m-d H:i:s");
+		$this->status = 1;
+		return parent::BeforeValidate();
+	}
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -32,9 +39,10 @@ class Blog extends CActiveRecord
 			array('name, title, desc, date_add, status', 'required'),
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('name, title', 'length', 'max'=>255),
+			array('email', 'email'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, title, desc, date_add, status', 'safe', 'on'=>'search'),
+			array('id, name, title, email, desc, date_add, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,6 +69,7 @@ class Blog extends CActiveRecord
 			'desc'     => 'Текст',
 			'date_add' => 'Дата',
 			'status'   => 'Статус',
+			'email'    => "E-mail",
 		);
 	}
 
@@ -88,6 +97,7 @@ class Blog extends CActiveRecord
 		$criteria->compare('desc',$this->desc,true);
 		$criteria->compare('date_add',$this->date_add,true);
 		$criteria->compare('status',$this->status);
+		$criteria->compare('email',$this->email, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

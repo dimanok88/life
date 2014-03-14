@@ -17,43 +17,35 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name'); ?>
+		<?php echo $form->textField($model,'name', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('name'))); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
+	<br/>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title'); ?>
+	<div class="row">	
+		<?php echo $form->textField($model,'email', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('email'))); ?>
+		<?php echo $form->error($model,'email'); ?>
+	</div>
+	<br/>
+
+	<div class="row">	
+		<?php echo $form->textField($model,'title', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('title'))); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
+	<br/>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'desc'); ?>
-		<?php echo $form->textField($model,'desc'); ?>
+		<?php echo $form->textArea($model,'desc', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('desc'))); ?>
 		<?php echo $form->error($model,'desc'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'date_add'); ?>
-		<?php echo $form->textField($model,'date_add'); ?>
-		<?php echo $form->error($model,'date_add'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
-		<?php echo $form->error($model,'status'); ?>
-	</div>
-
+	<br/>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
+		<?php echo CHtml::submitButton('Отправить', array('class'=>"styler")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
