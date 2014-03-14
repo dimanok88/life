@@ -54,6 +54,7 @@ return array(
 			'showScriptName'=>false,
 			'urlSuffix'=>'.html',
 			'rules'=>array(	
+				'gii/'=>'gii',
 				'adm/'=>'adm/default/index',
 				'adm/<controller:\w+>/<action:\w+>'=>'adm/<controller>/<action>',
 				'<tl>_<id:\d+>'=>'category/view',
@@ -108,9 +109,6 @@ return array(
         'gii'=>array(
             'class'=>'system.gii.GiiModule',
             'password'=>false,
-            'generatorsPath' => array(
-			  'bootstrap.gii'
-  		     ),
         ),
         'adm'=>array(
             'layout'=> 'column2',

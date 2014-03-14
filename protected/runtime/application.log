@@ -12373,3 +12373,75 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/
 ---
+2014/03/14 12:09:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "gii".' in /home/dima/web/life/framework/web/CController.php:483
+Stack trace:
+#0 /home/dima/web/life/framework/web/CController.php(270): CController->missingAction('gii')
+#1 /home/dima/web/life/framework/web/CWebApplication.php(282): CController->run('gii')
+#2 /home/dima/web/life/framework/web/CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 /home/dima/web/life/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dima/web/life/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gii
+---
+2014/03/14 12:09:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "gii".' in /home/dima/web/life/framework/web/CController.php:483
+Stack trace:
+#0 /home/dima/web/life/framework/web/CController.php(270): CController->missingAction('gii')
+#1 /home/dima/web/life/framework/web/CWebApplication.php(282): CController->run('gii')
+#2 /home/dima/web/life/framework/web/CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 /home/dima/web/life/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dima/web/life/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gii
+---
+2014/03/14 12:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "gii".' in /home/dima/web/life/framework/web/CController.php:483
+Stack trace:
+#0 /home/dima/web/life/framework/web/CController.php(270): CController->missingAction('gii')
+#1 /home/dima/web/life/framework/web/CWebApplication.php(282): CController->run('gii')
+#2 /home/dima/web/life/framework/web/CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 /home/dima/web/life/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dima/web/life/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gii/
+---
+2014/03/14 12:10:11 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "GiiModule.generatorsPath".' in /home/dima/web/life/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/dima/web/life/framework/base/CModule.php(513): CComponent->__set('generatorsPath', Array)
+#1 /home/dima/web/life/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /home/dima/web/life/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /home/dima/web/life/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /home/dima/web/life/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /home/dima/web/life/framework/web/CWebApplication.php(276): CWebApplication->createController('gii/index.php')
+#6 /home/dima/web/life/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/index.php')
+#7 /home/dima/web/life/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/dima/web/life/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gii/index.php
+---
+2014/03/14 12:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii/index.php".' in /home/dima/web/life/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dima/web/life/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/index.php')
+#1 /home/dima/web/life/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dima/web/life/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii/index.php
+---
+2014/03/14 12:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "gii".' in /home/dima/web/life/framework/web/CController.php:483
+Stack trace:
+#0 /home/dima/web/life/framework/web/CController.php(270): CController->missingAction('gii')
+#1 /home/dima/web/life/framework/web/CWebApplication.php(282): CController->run('gii')
+#2 /home/dima/web/life/framework/web/CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 /home/dima/web/life/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dima/web/life/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gii/
+---
+2014/03/14 12:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "blog".' in /home/dima/web/life/framework/web/CController.php:483
+Stack trace:
+#0 /home/dima/web/life/framework/web/CController.php(270): CController->missingAction('blog')
+#1 /home/dima/web/life/framework/web/CWebApplication.php(282): CController->run('blog')
+#2 /home/dima/web/life/framework/web/CWebApplication.php(141): CWebApplication->runController('site/blog')
+#3 /home/dima/web/life/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dima/web/life/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/
+---
