@@ -39,6 +39,7 @@ class Blog extends CActiveRecord
 			array('name, title, desc, date_add, status', 'required'),
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('name, title', 'length', 'max'=>255),
+			array('desc', 'length', 'min'=>200),
 			array('email', 'email'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

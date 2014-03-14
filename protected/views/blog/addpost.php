@@ -21,25 +21,34 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->textField($model,'name', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('name'))); ?>
+		<?php echo $form->textField($model,'name', array('class'=>'styler', "style"=>'width:500px;', 'placeholder'=>$model->getAttributeLabel('name'))); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 	<br/>
 
 	<div class="row">	
-		<?php echo $form->textField($model,'email', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('email'))); ?>
+		<?php echo $form->textField($model,'email', array('class'=>'styler', "style"=>'width:500px;', 'placeholder'=>$model->getAttributeLabel('email'))); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 	<br/>
 
 	<div class="row">	
-		<?php echo $form->textField($model,'title', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('title'))); ?>
+		<?php echo $form->textField($model,'title', array('class'=>'styler', "style"=>'width:500px;', 'placeholder'=>$model->getAttributeLabel('title'))); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 	<br/>
 
 	<div class="row">
-		<?php echo $form->textArea($model,'desc', array('class'=>'styler', 'placeholder'=>$model->getAttributeLabel('desc'))); ?>
+	<?php $this->widget('application.extensions.cleditor.ECLEditor', array(
+        'model'=>$model,
+        'attribute'=>'desc', //Model attribute name. Nome do atributo do modelo.
+        'options'=>array(
+			'width'    =>'600',
+			'height'   =>400,
+			'useCSS'   =>true,            
+			'controls' =>"bold italic | font size style | color highlight removeformat | bullets numbering | outdent indent | alignleft center alignright justify | undo redo | rule image link unlink | cut copy paste pastetext",
+        ),       
+    )); ?>
 		<?php echo $form->error($model,'desc'); ?>
 	</div>
 	<br/>
