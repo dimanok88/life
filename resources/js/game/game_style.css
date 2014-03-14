@@ -1,0 +1,56 @@
+#container_game {
+            margin: 0 auto;
+            padding: 10px 0;
+             background: #fff url("circles.png") repeat right top;
+            text-align: center;
+        }
+#dimcontainer {
+            padding: 2px;
+            margin: 0 auto;
+            left: 100px;
+        }
+#container_game .boxnum {
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid #e3e3e3;
+            background: #fff;
+            width: 70px;
+            height: 70px;
+            margin: 2px;
+            float: left;
+            color: #D80000;
+            -webkit-border-radius: .3em;
+            -moz-border-radius: .3em;
+            border-radius: .3em;
+        }
+#container_game .boxnum:hover {
+            background: #e3e3e3;
+        }
+#container_game .boxnum p {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: -1px 1px 1px #fff;
+        }
+#container_game .red {
+            background: #ff0000;
+            border-color: #ff0000;
+        }
+#container_game .red:hover {
+            background: #ff0000 !important;
+        }
+#container_game  #boxclear {
+            clear: both;
+        }
+#container_game  #pnext {
+            font-size: 18px;
+        }
+#container_game #nextsum { 
+            font-weight: bold;
+            font-size: 30px;
+            position: relative;
+            top: 3px;
+        }
+#container_game #pick {
+            font-size: 18px;
+        }
